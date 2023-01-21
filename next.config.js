@@ -2,7 +2,8 @@
 const nextConfig = {
   experimental: {
     appDir: true,
+    // appDir: false,
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

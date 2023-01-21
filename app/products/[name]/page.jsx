@@ -2,7 +2,7 @@ import { data } from '@/db/data';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../../src/styles/product.module.css';
+import styles from '../../../src/styles/product.module';
 
 export default function ProductsPage({ product }) {
   return (
