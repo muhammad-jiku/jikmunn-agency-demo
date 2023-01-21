@@ -6,7 +6,7 @@ import styles from '../../styles/navbar.module.css';
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link href="/">AV0CAD0</Link>
+      <Link href="/">j!KMUNN</Link>
       <ul className={styles.list}>
         <li className={styles.listItem}>
           <Link href="/products/design">DESIGN</Link>

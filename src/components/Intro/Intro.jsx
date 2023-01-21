@@ -13,7 +13,7 @@ const Intro = () => {
       {/* <Circle backgroundColor="#01c686" right="-40vh" /> */}
       <div className={styles.card}>
         <h1 className={styles.title}>
-          <span className={styles.brandName}>AV0CAD0</span> DIGITAL PRODUCT
+          <span className={styles.brandName}>j!KMUNN</span> DIGITAL PRODUCT
           AGENCY
         </h1>
         <p className={styles.desc}>
@@ -24,9 +24,9 @@ const Intro = () => {
       </div>
       <div className={styles.card}>
         <Image
-          //   src={process.env.NEXT_PUBLIC_URL + '/img/Avocado.png'}
-          src={'/assets/images/Avocado.png'}
-          style={{ objectFit: 'cover' }}
+          //   src={process.env.NEXT_PUBLIC_URL + '/img/jikmunn.png'}
+          src={'/assets/images/jikmunn.png'}
+          style={{ objectFit: 'contain' }}
           layout="fill"
           alt=""
         />

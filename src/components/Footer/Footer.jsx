@@ -4,10 +4,11 @@ import React from 'react';
 import styles from '../../styles/footer.module.css';
 
 const Footer = () => {
+  const year = new Date()?.getFullYear();
   return (
     <div className={styles.container}>
       <div className={styles.cardL}>
-        <h1 className={styles.title}>AV0CAD0 CREATIVES.</h1>
+        <h1 className={styles.title}>j!KMUNN CREATIVES.</h1>
         <h1 className={styles.linkTitle}>
           <Link href="/contact" className={styles.link} passHref>
             <>
@@ -25,12 +26,12 @@ const Footer = () => {
       </div>
       <div className={styles.cardS}>
         <div className={styles.cardItem}>
-          45 ADAM STREET,
-          <br /> USA
+          NAZIR ROAD, FENI,
+          <br /> BD
         </div>
         <div className={styles.cardItem}>
-          CONTACT@LAMA.DEV
-          <br /> 111_438_5244
+          CONTACT@JIKMUNN.DEV
+          <br /> 855_127_6144
         </div>
       </div>
       <div className={styles.cardS}>
@@ -39,7 +40,7 @@ const Footer = () => {
           <br /> __FB __IN __BE __TW
         </div>
         <div className={styles.cardItem}>
-          © 2022 LAMA INTERACTIVE,
+          © {year} j!KMUNN CREATIVES,
           <br />
           ALL RIGHTS RESERVED
         </div>
