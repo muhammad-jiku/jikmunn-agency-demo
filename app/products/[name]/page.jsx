@@ -30,6 +30,7 @@ export default function ProductsPage({ params }) {
               layout="fill"
               style={{ objectFit: 'cover' }}
               alt=""
+              loading="eager"
             />
           </div>
         ))}

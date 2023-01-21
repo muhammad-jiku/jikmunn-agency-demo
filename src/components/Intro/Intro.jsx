@@ -29,6 +29,7 @@ const Intro = () => {
           style={{ objectFit: 'contain' }}
           layout="fill"
           alt=""
+          loading="eager"
         />
       </div>
     </div>

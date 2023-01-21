@@ -19,6 +19,7 @@ const Footer = () => {
                 width={40}
                 height={40}
                 alt=""
+                loading="eager"
               />
             </>
           </Link>

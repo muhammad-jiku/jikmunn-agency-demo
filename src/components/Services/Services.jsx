@@ -37,6 +37,7 @@ const Services = ({ services }) => {
                       layout="responsive"
                       style={{ objectFit: 'cover' }}
                       alt=""
+                      loading="eager"
                     />
                   )}
                 </div>

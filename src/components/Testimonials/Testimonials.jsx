@@ -19,6 +19,7 @@ const Testimonials = () => {
               width={30}
               height={30}
               alt=""
+              loading="eager"
             />
             <p className={styles.comment}>&ldquo;{user.comment}&rdquo;</p>
             <div className={styles.person}>
@@ -30,6 +31,7 @@ const Testimonials = () => {
                 height={45}
                 style={{ objectFit: 'cover' }}
                 alt=""
+                loading="eager"
               />
               <div className={styles.info}>
                 <span className={styles.username}>{user.name}</span>
