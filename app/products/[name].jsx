@@ -15,10 +15,10 @@ export default function ProductsPage({ product }) {
         />
       </Head>
       <div className={styles.cardL}>
-        {product.images.map((img) => (
-          <div key={img.id} className={styles.imgContainer}>
+        {product?.images?.map((img) => (
+          <div key={img?.id} className={styles.imgContainer}>
             <Image
-              src={img.url}
+              src={img?.url}
               layout="fill"
               style={{ objectFit: 'cover' }}
               alt=""
@@ -38,12 +38,12 @@ export default function ProductsPage({ product }) {
 }
 
 export const getStaticPaths = async () => {
-  const products = data;
-  console.log(products);
-  const paths = products.map((item) => {
-    console.log(paths);
+  const products = await data;
+  console.log('products', products);
+  const paths = await products?.map((item) => {
+    console.log('paths', paths);
     return {
-      params: { name: item.name },
+      params: { name: item?.name },
     };
   });
   return {
@@ -53,11 +53,11 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (ctx) => {
-  console.log(ctx);
-  const name = ctx.params.name;
-  console.log(name);
-  const product = data.filter((item) => item.name === name)[0];
-  console.log(product);
+  console.log('ctx', ctx);
+  const name = await ctx?.params?.name;
+  console.log('name', name);
+  const product = await data?.filter((item) => item?.name === name)[0];
+  console.log('product:', product);
   return {
     props: { product },
   };

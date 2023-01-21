@@ -11,23 +11,27 @@ const Services = ({ services }) => {
         <h1 className={styles.title}>What We Can Do?</h1>
         <h1 className={styles.subtitle}>Services we can help you with</h1>
         <div className={styles.services}>
-          {services.map((service) => (
-            <Link key={service.id} href={`/products/${service.name}`} passHref>
+          {services?.map((service) => (
+            <Link
+              key={service?.id}
+              href={`/products/${service?.name}`}
+              passHref
+            >
               <div className={styles.service}>
-                <div className={styles.catInfo}>{service.desc}</div>
-                <span className={styles.cat}>{service.title}</span>
+                <div className={styles.catInfo}>{service?.desc}</div>
+                <span className={styles.cat}>{service?.title}</span>
                 <div className={styles.media}>
-                  {service.video ? (
+                  {service?.video ? (
                     <video
                       className={styles.video}
-                      src={`/assets/videos/${service.video}`}
+                      src={`/assets/videos/${service?.video}`}
                       autoPlay
                       loop
                     />
                   ) : (
                     <Image
-                      //   src={`${process.env.NEXT_PUBLIC_URL}/img/${service.photo}`}
-                      src={`/assets/images/${service.photo}`}
+                      //   src={`${process.env.NEXT_PUBLIC_URL}/img/${service?.photo}`}
+                      src={`/assets/images/${service?.photo}`}
                       width="100%"
                       height="100%"
                       layout="responsive"
