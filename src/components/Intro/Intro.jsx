@@ -26,8 +26,8 @@ const Intro = () => {
         <Image
           //   src={process.env.NEXT_PUBLIC_URL + '/img/Avocado.png'}
           src={'/assets/images/Avocado.png'}
+          style={{ objectFit: 'cover' }}
           layout="fill"
-          objectFit="cover"
           alt=""
         />
       </div>
