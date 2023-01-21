@@ -3,6 +3,8 @@ import Image from 'next/image';
 import React from 'react';
 import Circle from '../Circle/Circle';
 
+import styles from '../../styles/testimonials.module.css';
+
 const Testimonials = () => {
   return (
     <div className={styles.container}>
@@ -13,7 +15,7 @@ const Testimonials = () => {
           <div className={styles.card} key={user.id}>
             <Image
               // src={`${process.env.NEXT_PUBLIC_URL}/img/${user.logo}`}
-              // src={`/assets/images/${user.logo}`}
+              src={`/assets/images/${user.logo}`}
               width={30}
               height={30}
               alt=""
@@ -23,10 +25,10 @@ const Testimonials = () => {
               <Image
                 className={styles.avatar}
                 //   src={`${process.env.NEXT_PUBLIC_URL}/img/${user.avatar}`}
-                // src={`/assets/images/${user.avatar}`}
-                width="45"
-                height="45"
-                objectFit="cover"
+                src={`/assets/images/${user.avatar}`}
+                width={45}
+                height={45}
+                style={{ objectFit: 'cover' }}
                 alt=""
               />
               <div className={styles.info}>
