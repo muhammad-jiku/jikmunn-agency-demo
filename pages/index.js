@@ -1,8 +1,9 @@
+//  internal imports
+import Head from 'next/head';
 import { data } from '@/db/data';
 import Intro from '@/src/components/Intro/Intro';
 import Services from '@/src/components/Services/Services';
 import Testimonials from '@/src/components/Testimonials/Testimonials';
-import Head from 'next/head';
 
 const HomePage = ({ services }) => {
   return (

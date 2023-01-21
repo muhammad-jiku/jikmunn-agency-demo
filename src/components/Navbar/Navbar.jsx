@@ -1,5 +1,6 @@
 import React from 'react';
 
+//  internal imports
 import Link from 'next/link';
 import styles from '../../styles/navbar.module.css';
 

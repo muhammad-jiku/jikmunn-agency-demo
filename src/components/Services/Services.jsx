@@ -1,7 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 
+//  internal imports
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../../styles/services.module.css';
 
 const Services = ({ services }) => {
@@ -30,7 +31,6 @@ const Services = ({ services }) => {
                     />
                   ) : (
                     <Image
-                      //   src={`${process.env.NEXT_PUBLIC_URL}/img/${service?.photo}`}
                       src={`/assets/images/${service?.photo}`}
                       width={100}
                       height={100}

@@ -1,6 +1,7 @@
 import React from 'react';
-import Circle from '../Circle/Circle';
 
+//  internal imports
+import Circle from '../Circle/Circle';
 import styles from '../../styles/contact.module.css';
 
 const Contact = () => {

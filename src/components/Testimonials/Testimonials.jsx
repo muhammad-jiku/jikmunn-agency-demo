@@ -1,8 +1,9 @@
-import { users } from '@/db/data';
-import Image from 'next/image';
 import React from 'react';
-import Circle from '../Circle/Circle';
 
+//  internal imports
+import Image from 'next/image';
+import { users } from '@/db/data';
+import Circle from '../Circle/Circle';
 import styles from '../../styles/testimonials.module.css';
 
 const Testimonials = () => {
@@ -14,7 +15,6 @@ const Testimonials = () => {
         {users.map((user) => (
           <div className={styles.card} key={user.id}>
             <Image
-              // src={`${process.env.NEXT_PUBLIC_URL}/img/${user.logo}`}
               src={`/assets/images/${user.logo}`}
               width={30}
               height={30}
@@ -25,7 +25,6 @@ const Testimonials = () => {
             <div className={styles.person}>
               <Image
                 className={styles.avatar}
-                //   src={`${process.env.NEXT_PUBLIC_URL}/img/${user.avatar}`}
                 src={`/assets/images/${user.avatar}`}
                 width={45}
                 height={45}

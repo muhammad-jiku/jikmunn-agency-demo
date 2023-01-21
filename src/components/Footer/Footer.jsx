@@ -1,6 +1,8 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
+
+//  internal imports
+import Link from 'next/link';
+import Image from 'next/image';
 import styles from '../../styles/footer.module.css';
 
 const Footer = () => {
@@ -14,7 +16,6 @@ const Footer = () => {
             <>
               <span className={styles.linkText}>WORK WITH US</span>
               <Image
-                // src={process.env.NEXT_PUBLIC_URL + '/img/link.png'}
                 src={`/assets/images/link.png`}
                 width={40}
                 height={40}

@@ -1,3 +1,4 @@
+//  exporting data
 export const data = [
   {
     id: 1,
@@ -142,6 +143,7 @@ export const data = [
   },
 ];
 
+//  exporting users info
 export const users = [
   {
     id: 1,

@@ -1,8 +1,10 @@
-import { data } from '@/db/data';
+import React, { use } from 'react';
+
+//  internal imports
+import Link from 'next/link';
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
-import { use } from 'react';
+import { data } from '@/db/data';
 import styles from '../../../src/styles/product.module.css';
 
 async function getProducts(params) {

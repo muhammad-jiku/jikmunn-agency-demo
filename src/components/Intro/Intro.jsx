@@ -1,8 +1,9 @@
-import Image from 'next/image';
 import React from 'react';
 
-import styles from '../../styles/intro.module.css';
+//  internal imports
+import Image from 'next/image';
 import Circle from '../Circle/Circle';
+import styles from '../../styles/intro.module.css';
 
 const Intro = () => {
   return (
@@ -10,7 +11,6 @@ const Intro = () => {
       {/* <div className={`${styles.circle} ${styles.circle1}`} />
       <div className={`${styles.circle} ${styles.circle2}`} /> */}
       <Circle backgroundColor="#01c686" top="-45vh" left="-45vh" />
-      {/* <Circle backgroundColor="#01c686" right="-40vh" /> */}
       <div className={styles.card}>
         <h1 className={styles.title}>
           <span className={styles.brandName}>j!KMUNN</span> DIGITAL PRODUCT
@@ -24,7 +24,6 @@ const Intro = () => {
       </div>
       <div className={styles.card}>
         <Image
-          //   src={process.env.NEXT_PUBLIC_URL + '/img/jikmunn.png'}
           src={'/assets/images/jikmunn.png'}
           style={{ objectFit: 'contain' }}
           layout="fill"
