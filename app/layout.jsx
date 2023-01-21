@@ -6,7 +6,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head />
-      <body>
+      <body
+        style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}
+      >
         <Navbar />
         {children}
         <Footer />
