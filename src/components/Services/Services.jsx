@@ -32,8 +32,8 @@ const Services = ({ services }) => {
                     <Image
                       //   src={`${process.env.NEXT_PUBLIC_URL}/img/${service?.photo}`}
                       src={`/assets/images/${service?.photo}`}
-                      width="100%"
-                      height="100%"
+                      width={100}
+                      height={100}
                       layout="responsive"
                       style={{ objectFit: 'cover' }}
                       alt=""
